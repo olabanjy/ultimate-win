@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@400;600;700&family=Open+Sans:wght@400;500;600&display=swap');
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Exo', sans-serif;
+}
+
+
+.btn-blue, .btn-blue:hover{
+    font-family: "Exo";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 53px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: white;
+    background: #4A50F0;
+}
+
+.modal-body {
+    font-family: "Exo";
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    background: #F2F2FF;
+}
+
+.navbar-brand img.logo {
+    width: 150px;
+    /* height:100%; */
+}
+
+
+.hero {
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 35%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, #0910d3, #3d41af);
+    opacity: 1;
+    z-index: -1;
+}
+
+.hero h1 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 85px;
+    letter-spacing: 0em;
+    color: #FFF;
+}
+
+.hero h3 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 53px;
+    letter-spacing: 0.31em;
+    color: #FFF;
+}
+
+
+
+.title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 80px;
+    text-align: center;
+    color: #000000;
+}
+
+.text{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    text-transform: capitalize;
+    color:#555555;
+}
+
+
+.feature{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.feature img{
+    width: 44px;
+    height: 45px;
+    object-fit: cover;
+}
+
+
+.feature .feature-body{
+    margin-left: 15px;
+}
+
+.feature .feature-body h3{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0em;
+    margin-bottom: 0rem;
+}
+
+
+.feature .feature-body p{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0.05em;
+    /* margin-top: 10px; */
+}
+.style-circle{
+    padding-left: 0;
+    list-style: none;
+    line-height: 1.7em;
+    padding-right: 80px;
+}
+ .style-circle>li {
+    margin-bottom: 25px;
+    padding-left: 30px;
+    position: relative;
+}
+ .style-circle>li:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 7px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+
+.style-circle>li:last-child {
+    margin-bottom: 0;
+}
+
+.style-circle>li:nth-child(3n-2):before {
+    background: -webkit-linear-gradient(135deg, rgba(247, 74, 5, 0.4), #f74a05);
+    background: linear-gradient(-45deg, rgba(247, 74, 5, 0.4), #f74a05);
+}
+
+.style-circle>li:nth-child(3n-1):before {
+    background: -webkit-linear-gradient(left, rgba(47, 195, 205, 0.4), #2fc3cd);
+    background: linear-gradient(90deg, rgba(47, 195, 205, 0.4), #2fc3cd);
+}
+
+.style-circle>li:nth-child(3n):before {
+    background: -webkit-linear-gradient(135deg, rgba(32, 207, 69, 0.4), #20cf45);
+    background: linear-gradient(-45deg, rgba(32, 207, 69, 0.4), #20cf45);
+}
+
+
+
+
+
+.single-jackpot-content .draw-countdown .syotimer__body,
+.single-jackpot-content .offer-countdown .syotimer__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 -8px -25px;
+}
+
+@media only screen and (max-width: 420px) {
+
+    .single-jackpot-content .draw-countdown .syotimer__body,
+    .single-jackpot-content .offer-countdown .syotimer__body {
+        margin: 0 -5px -25px;
+    }
+}
+
+.single-jackpot-content .draw-countdown .syotimer__body>.syotimer-cell,
+.single-jackpot-content .offer-countdown .syotimer__body>.syotimer-cell {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 85px;
+    flex: 0 0 85px;
+    max-width: 85px;
+    text-align: center;
+    position: relative;
+    margin: 0 8px 25px;
+}
+
+@media only screen and (max-width: 420px) {
+
+    .single-jackpot-content .draw-countdown .syotimer__body>.syotimer-cell,
+    .single-jackpot-content .offer-countdown .syotimer__body>.syotimer-cell {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 65px;
+        flex: 0 0 65px;
+        max-width: 65px;
+        margin: 0 5px 25px;
+    }
+}
+
+.single-jackpot-content .draw-countdown .syotimer__body>.syotimer-cell>.syotimer-cell__value,
+.single-jackpot-content .offer-countdown .syotimer__body>.syotimer-cell>.syotimer-cell__value {
+    font-size: 40px;
+    margin-bottom: 10px;
+    line-height: 1em;
+    background-color: black;
+    font-family: "ds-digitalbold";
+    color: #00ebac;
+    padding: 10px 5px;
+    border-color: #66676A;
+    border-style: solid;
+    border-width: 7px 3px;
+    border-radius: 15px;
+}
+
+@media only screen and (max-width: 991px) {
+
+    .single-jackpot-content .draw-countdown .syotimer__body>.syotimer-cell>.syotimer-cell__value,
+    .single-jackpot-content .offer-countdown .syotimer__body>.syotimer-cell>.syotimer-cell__value {
+        font-size: 30px;
+        padding: 15px 5px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+
+    .single-jackpot-content .draw-countdown .syotimer__body>.syotimer-cell>.syotimer-cell__value,
+    .single-jackpot-content .offer-countdown .syotimer__body>.syotimer-cell>.syotimer-cell__value {
+        font-size: 26px;
+        padding: 12px 5px;
+        margin-bottom: 7px;
+        border-width: 4px 2px;
+    }
+}
+
+.single-jackpot-content .draw-countdown .syotimer__body>.syotimer-cell>.syotimer-cell__unit,
+.single-jackpot-content .offer-countdown .syotimer__body>.syotimer-cell>.syotimer-cell__unit {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #232323;
+}
+
+@media only screen and (max-width: 575px) {
+
+    .single-jackpot-content .draw-countdown .syotimer__body>.syotimer-cell>.syotimer-cell__unit,
+    .single-jackpot-content .offer-countdown .syotimer__body>.syotimer-cell>.syotimer-cell__unit {
+        font-size: 16px;
+    }
+}
+
+
+
+@media only screen and (max-width: 981px) {
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature img {
+    /* text-align: center; */
+}
+
+
+.feature .feature-body {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.feature .feature-body h3 {
+    font-size: 24px;
+}
+
+
+.feature .feature-body p {
+    font-size: 18px;
+    /* margin-top: 10px; */
+}
+}
+
+
+@media only screen and (max-width: 768px) {
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.4;
+}
+}
