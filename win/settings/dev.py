@@ -3,8 +3,8 @@ from .base import *
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
-# ALLOWED_HOSTS = ["ultimatewin.ng", "www.ultimatewin.ng"]
+# ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["ultimatewin.ng", "www.ultimatewin.ng", "3.85.219.77"]
 
 
 INSTALLED_APPS += ["debug_toolbar"]
